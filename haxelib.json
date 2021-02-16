@@ -10,12 +10,15 @@
         "0b1kn00b"
     ],
     "releasenote": "",
-    "version": "0.0.1",
-    "url": "http://www.example.com",
+    "version": "0.1.0",
+    "url": "https://github.com/ohm_run/stx_pkg",
     "dependencies": {
-        "tink_core": "",
-        "stx_core": "",
-        "stx_fn": "1.0.0"
+        "tink_core"     : "git:https://github.com/haxetink/tink_core.git",
+        "hx3compat"     : "git:https://github.com/HaxeFoundation/hx3compat.git",
+        "stx_pico"      : "git:https://github.com/ohmrun/stx_pico.git",
+        "stx_nano"      : "git:https://github.com/ohmrun/stx_nano.git",
+        "stx_fn"        : "git:https://github.com/ohmrun/stx_fn.git",
+        "stx_makro"     : "git:https://github.com/ohmrun/stx_makro.git"
     },
     "classPath": "src/main/haxe"
 }
