@@ -6,7 +6,7 @@ package stx.pkg;
   }
   #if (!macro)
     @:from static public function fromPosInfos(pos:PosInfos):Scope{
-      var module : Identifier  = pos;
+      var module : Identifier  = Position.lift(pos).toIdentifier();
       var out : ScopeDef = {
         name : module.name,
         pack : module.pack
@@ -15,7 +15,7 @@ package stx.pkg;
     }
   #end
     @:from static public function fromPosition(pos:Position):Scope{
-      var module : Identifier  = pos.toPos();
+      var module : Identifier  = pos.toPos().toIdentifier().toIdentDef();
       var out : ScopeDef = {
         name : module.name,
         pack : module.pack

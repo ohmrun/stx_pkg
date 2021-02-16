@@ -16,7 +16,7 @@ class PkgLift{
   }
   #else
   static public function pkg(_:Wildcard,?pos:Position):Pkg{
-    var p           : Scope   = pos;
+    var p           : Scope   = Scope.fromPosition(pos);
     return Pkg.fromScope(p);
   }
   #end
