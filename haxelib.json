@@ -1,0 +1,21 @@
+{
+    "name": "stx_pkg",
+    "license": "MIT",
+    "tags": [
+        "cross",
+        "functional"
+    ],
+    "description": "Provides a safe way to make decisions based on package location",
+    "contributors": [
+        "0b1kn00b"
+    ],
+    "releasenote": "",
+    "version": "0.0.1",
+    "url": "http://www.example.com",
+    "dependencies": {
+        "tink_core": "",
+        "stx_core": "",
+        "stx_fn": "1.0.0"
+    },
+    "classPath": "src/main/haxe"
+}

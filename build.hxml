@@ -1,0 +1,17 @@
+-lib utest
+
+-lib stx_pico
+-lib stx_nano
+-lib stx_fn
+-lib stx_test
+
+-lib stx_makro 
+
+-D analyzer-optimize
+
+-main Main
+--interp
+
+-cp src/main/haxe
+
+-D test=pkg_test
