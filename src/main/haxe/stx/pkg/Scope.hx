@@ -9,22 +9,22 @@ package stx.pkg;
       var module : Identifier  = Position.lift(pos).toIdentifier();
       var out : ScopeDef = {
         name : module.name,
-        pack : module.pack
+        pack : Way.lift(module.pack)
       }
       return new Scope(out);
     }
   #end
     @:from static public function fromPosition(pos:Position):Scope{
-      var module : Identifier  = pos.toPos().toIdentifier().toIdentDef();
+      var module : Identifier  = pos.toPos().toIdentifier();
       var out : ScopeDef = {
         name : module.name,
-        pack : module.pack
+        pack : Way.lift(module.pack)
       }
       return new Scope(out);
     }
   public function equals(that:Scope){
-    var packl   = __.option(this.pack).def(()->[]);
-    var packr   = __.option(that.pack).def(()->[]);
+    var packl   = __.option(this.pack).def(Way.unit);
+    var packr   = __.option(that.pack).def(Way.unit);
     var pack_ok = packl.length == packr.length;
     
     if(pack_ok){
