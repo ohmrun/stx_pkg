@@ -1,6 +1,5 @@
 package stx.pkg.test;
 
-import utest.UTest.*;
-import utest.Assert.*;
+using  stx.Test;
 
 import stx.pkg.test.types.*;
