@@ -1,0 +1,7 @@
+{
+  "build" : {
+    "unit" : {
+      "--macro" : ["include('stx.pkg',true)"]
+    }
+  }
+}
