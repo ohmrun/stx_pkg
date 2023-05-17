@@ -1,5 +1,7 @@
 {
   "build" : {
+    "-lib" : ["stx_pico","stx_nano","stx_fn"],
+    "-cp" : "src/main/haxe",
     "unit" : {
       "--macro" : ["include('stx.pkg',true)"]
     }
